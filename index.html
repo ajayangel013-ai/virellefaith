@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virellefaith — Light. Soul. Purpose.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">virellefaith</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="#posts" class="nav-link">Posts</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li>
+          <a href="https://www.instagram.com/virellefaith/" target="_blank" class="nav-instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @virellefaith
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ A space for the soul ✦</p>
+      <h1 class="hero-title">Words that<br/><em>hold you</em></h1>
+      <p class="hero-desc">Faith reflections, grace-filled stories, and honest truths for every season of the journey.</p>
+      <a href="#posts" class="hero-cta">Read the blog</a>
+    </div>
+    <div class="hero-verse">
+      <span class="verse-text">"Your word is a lamp to my feet and a light to my path."</span>
+      <span class="verse-ref">Psalm 119:105</span>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- CATEGORY FILTER -->
+  <section class="filter-bar" id="posts">
+    <div class="container">
+      <div class="filter-scroll">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Faith">Faith</button>
+        <button class="filter-btn" data-filter="Growth">Growth</button>
+        <button class="filter-btn" data-filter="Hope">Hope</button>
+        <button class="filter-btn" data-filter="Identity">Identity</button>
+        <button class="filter-btn" data-filter="Lifestyle">Lifestyle</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="featured-section container" id="featured">
+    <div class="section-label">✦ Featured</div>
+    <div class="featured-post" id="featuredPost">
+      <div class="post-skeleton"></div>
+    </div>
+  </section>
+
+  <!-- POSTS GRID -->
+  <section class="posts-section container">
+    <div class="section-label">Recent Posts</div>
+    <div class="posts-grid" id="postsGrid">
+      <!-- Loaded by JS -->
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="about-inner container">
+      <div class="about-deco">✦</div>
+      <div class="about-text">
+        <p class="about-eyebrow">About this space</p>
+        <h2 class="about-title">For the ones<br/>still becoming</h2>
+        <p class="about-body">This is a place for honest faith — the kind that holds up in the hard seasons and still sings in the good ones. No performance. No pretend. Just words that remind you: you are known, you are loved, and you are not alone in this.</p>
+        <a href="https://www.instagram.com/virellefaith/" target="_blank" class="about-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+      <div class="about-verse-block">
+        <blockquote class="about-verse">
+          "She is clothed with strength and dignity; she can laugh at the days to come."
+          <cite>Proverbs 31:25</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-logo">
+        <span class="logo-icon">✦</span> virellefaith
+      </a>
+      <p class="footer-tagline">Light. Soul. Purpose.</p>
+      <a href="https://www.instagram.com/virellefaith/" target="_blank" class="footer-instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @virellefaith
+      </a>
+      <p class="footer-copy">© 2025 Virellefaith. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
